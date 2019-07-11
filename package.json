@@ -1,0 +1,26 @@
+{
+  "name": "shorten_my_link",
+  "private": true,
+  "scripts": {
+    "start": "meteor run",
+    "test": "meteor test --once --driver-package meteortesting:mocha",
+    "test-app": "TEST_WATCH=1 meteor test --full-app --driver-package meteortesting:mocha",
+    "visualize": "meteor --production --extra-packages bundle-visualizer"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.3.4",
+    "connect-route": "^0.1.5",
+    "meteor-node-stubs": "^0.4.1",
+    "react": "^16.8.6",
+    "react-addons-pure-render-mixin": "^15.6.2",
+    "react-dom": "^16.8.6",
+    "valid-url": "^1.0.9"
+  },
+  "meteor": {
+    "mainModule": {
+      "client": "client/main.js",
+      "server": "server/main.js"
+    },
+    "testModule": "tests/main.js"
+  }
+}
